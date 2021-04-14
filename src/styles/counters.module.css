@@ -1,0 +1,23 @@
+.list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding: 20px 0;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-weight: 500;
+    color: #585858;
+}
+
+.item span {
+    padding-top: 10px;
+    font-weight: 900;
+    font-size: x-large;
+    color: #a1a1a1;
+}

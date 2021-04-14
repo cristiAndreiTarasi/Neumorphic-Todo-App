@@ -1,0 +1,120 @@
+
+.addTodoForm {
+    margin: 10px 0 10px -10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 480px;
+}
+
+.addTodoFormField {
+    transition: 500ms ease-in-out;
+    margin-right: 10px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: none;
+    height: 60px;
+    width: 60px;
+    box-shadow: inset 6px 6px 6px 0 rgba(174, 174, 192, 0.4), inset -6px -6px 6px 0 rgb(248, 248, 248);
+
+    left: -4px;
+    margin-left: -44px;
+    z-index: -999;
+    left: 46px;
+    position: absolute;
+    outline: none;
+     
+    /* opacity: 0; */
+}
+
+.addTodoFormFieldExpanded {
+    width: 490px;
+    font-size: 1em;
+    padding: 0 0 0 20px;
+    color: #b3b3b3;
+    box-shadow: inset 6px 6px 6px 0 rgba(174, 174, 192, 0.4), inset -6px -6px 6px 0 rgb(248, 248, 248);
+    outline: none;
+    position: absolute;
+}
+
+.labelForAddTodoFormField {
+    transition: 500ms ease-in-out;
+    background-color: #f0f0f3;
+    border-radius: 50px;
+    /* box-shadow: inset 4px 4px 4px 0 #f8f8f8, inset -4px -4px 4px 0 rgba(174, 174, 192, 0.3); */
+    box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.7), inset -2px -2px 2px 0 rgba(174, 174, 192, 0.4);
+    color: #6b7077;
+    display: flex;
+    justify-content: center;
+    left: 12px;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    margin: 10px 0;
+    font-weight: 300;
+    cursor: pointer;
+    position: absolute;
+}
+
+.labelForAddTodoFormFieldExpanded {
+    width: 100px;
+    margin-left: 388px;
+    border-radius: 50px;
+}
+
+/* list item drop shadow holding element */
+.dropShadow {
+    transition: 500ms ease-in-out;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px 0 rgba(174, 174, 192, 0.4), -4px -4px 3px 0 #f8f8f8;
+    height: 40px;
+    width: 40px;
+    z-index: -12;
+    position: absolute;
+    left: 12px;
+    /* color: #949494; */
+}
+
+/* list item drop shadow background */
+.shadowBg {
+    transition: 500ms ease-in-out;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding: 6px;
+    z-index: -12;
+    background: linear-gradient(-45deg, rgba(209, 209, 221, 0.4), rgba(255, 255, 255, 0.4));
+    left: 6px;
+    position: absolute;
+}
+
+.dropShadowExpanded {
+    width: 100px;
+    margin-left: 388px;
+    border-radius: 50px;
+}
+
+.shadowBgExpanded {
+    width: 100px;
+    margin-left: 388px;
+    border-radius: 50px;
+}
+
+.plus,
+.arrow {
+    padding: 10px 35px;
+    height: 20px;
+    position: absolute;
+}
+
+.toggleFormIcons {
+    display: none;
+}
+
+.rightArrow {
+    /* composes: toggleFormIcons; */
+    padding: 10px;
+    height: 16px;
+    position: absolute;
+}

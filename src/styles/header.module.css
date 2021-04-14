@@ -1,0 +1,21 @@
+.header {
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 12px 8px -8px rgba(174, 174, 192, 0.4), inset 0 -8px 8px -8px rgba(174, 174, 192, 0.4);
+    margin-bottom: 30px;
+}
+
+.title,
+.subtitle {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-weight: 900;
+}
+
+.subtitle {
+    font-weight: 300;
+    font-size: medium;
+}

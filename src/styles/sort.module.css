@@ -1,0 +1,62 @@
+.sortingList {
+    /* width: 40px; */
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.listItemText {
+    display: none;
+}
+
+.listItemGroupName {
+    color: gray;
+}
+
+.listItemIcon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-color: #f0f0f3;
+    border-radius: 50px;
+    box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.9), inset -2px -2px 2px 0 rgba(174, 174, 192, 0.5);
+    /* text-shadow: -1px -1px 1px #62a1f5, 1px 1px 1px #62a1f5; */
+    color: rgb(180, 179, 179);
+    /* color: #62a1f5; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-right: 20px;
+    font-weight: 300;
+    position: relative;
+}
+
+/* list item drop shadow holding element */
+.listItemIcon::after {
+    content: '';
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px 0 rgba(174, 174, 192, 0.4), -2px -2px 2px 0 rgba(248, 248, 248, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    z-index: -10;
+}
+
+/* list item drop shadow background */
+.listItemIcon::before {
+    /* content: '';
+    border-radius: 50px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: -20;
+    background: linear-gradient(-5deg, rgba(209, 209, 221, 0.4), rgba(248, 248, 248, 0.4)); */
+}
